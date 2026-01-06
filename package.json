@@ -1,5 +1,5 @@
 {
-  "name": ".",
+  "name": "mogu-node",
   "version": "1.0.0",
   "description": "Template project for writing node package with napi-rs",
   "main": "index.js",
@@ -51,6 +51,7 @@
     "test": "ava",
     "preversion": "napi build --platform && git add .",
     "version": "napi version",
+    "postinstall": "node scripts/download-model.js",
     "prepare": "husky"
   },
   "devDependencies": {
@@ -102,5 +103,8 @@
     "singleQuote": true,
     "arrowParens": "always"
   },
-  "packageManager": "yarn@4.12.0"
+  "packageManager": "bun@1.2.0",
+  "dependencies": {
+    "@huggingface/hub": "^2.7.1"
+  }
 }

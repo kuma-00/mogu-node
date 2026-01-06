@@ -1,0 +1,3 @@
+[submodule "mogu"]
+	path = mogu
+	url = https://github.com/kuma-00/Mogu.git

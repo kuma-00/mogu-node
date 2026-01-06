@@ -33,6 +33,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@huggingface/hub@npm:^2.7.1":
+  version: 2.7.1
+  resolution: "@huggingface/hub@npm:2.7.1"
+  dependencies:
+    "@huggingface/tasks": "npm:^0.19.64"
+    cli-progress: "npm:^3.12.0"
+  dependenciesMeta:
+    cli-progress:
+      optional: true
+  bin:
+    hfjs: dist/cli.js
+  checksum: 10c0/5270ce1bed3cf7f9bc95d532eedc37da6aa23fc621e70439fa3fa21161528b74d6880283c7ddeba77bd7ea4ff7d6e64d7c017b23a9eac6db5edb8912dfbec7df
+  languageName: node
+  linkType: hard
+
+"@huggingface/tasks@npm:^0.19.64":
+  version: 0.19.74
+  resolution: "@huggingface/tasks@npm:0.19.74"
+  checksum: 10c0/3dab2d5832fccf03b718f1cc0faeba712fe7536c8660b4ee74b936acca5f23126952efac9484d6ee6a53ff92a8b972fa13f5703c902f95ada29f403e1bb04df1
+  languageName: node
+  linkType: hard
+
 "@inquirer/checkbox@npm:^4.2.2":
   version: 4.2.2
   resolution: "@inquirer/checkbox@npm:4.2.2"
@@ -568,28 +590,6 @@ __metadata:
   checksum: 10c0/df098c99f904b54541e3a34feeb5878c98a4abf1ababf1d301d903b99d98402fff5eda49e1dd103bb4bf44a9217a5e1b17fb30b74044416561f8fe02ca098ee3
   languageName: node
   linkType: hard
-
-"@napi-rs/package-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@napi-rs/package-template@workspace:."
-  dependencies:
-    "@emnapi/core": "npm:^1.5.0"
-    "@emnapi/runtime": "npm:^1.5.0"
-    "@napi-rs/cli": "npm:^3.2.0"
-    "@oxc-node/core": "npm:^0.0.35"
-    "@taplo/cli": "npm:^0.7.0"
-    "@tybys/wasm-util": "npm:^0.10.0"
-    ava: "npm:^6.4.1"
-    chalk: "npm:^5.6.2"
-    husky: "npm:^9.1.7"
-    lint-staged: "npm:^16.1.6"
-    npm-run-all2: "npm:^8.0.4"
-    oxlint: "npm:^1.14.0"
-    prettier: "npm:^3.6.2"
-    tinybench: "npm:^6.0.0"
-    typescript: "npm:^5.9.2"
-  languageName: unknown
-  linkType: soft
 
 "@napi-rs/tar-android-arm-eabi@npm:1.1.0":
   version: 1.1.0
@@ -1703,6 +1703,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cli-progress@npm:^3.12.0":
+  version: 3.12.0
+  resolution: "cli-progress@npm:3.12.0"
+  dependencies:
+    string-width: "npm:^4.2.3"
+  checksum: 10c0/f464cb19ebde2f3880620a2adfaeeefaec6cb15c8e610c8a659ca1047ee90d69f3bf2fdabbb1fe33ac408678e882e3e0eecdb84ab5df0edf930b269b8a72682d
+  languageName: node
+  linkType: hard
+
 "cli-truncate@npm:^4.0.0":
   version: 4.0.0
   resolution: "cli-truncate@npm:4.0.0"
@@ -2502,6 +2511,29 @@ __metadata:
   checksum: 10c0/9f2b975e9246351f5e3a40dcfac99fcd0baa31fbfab615fe059fb11e51f10e4803c63de1f384c54d656e4db31d000e4767e9ef076a22e12a641357602e31d57d
   languageName: node
   linkType: hard
+
+"mogu-node@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "mogu-node@workspace:."
+  dependencies:
+    "@emnapi/core": "npm:^1.5.0"
+    "@emnapi/runtime": "npm:^1.5.0"
+    "@huggingface/hub": "npm:^2.7.1"
+    "@napi-rs/cli": "npm:^3.2.0"
+    "@oxc-node/core": "npm:^0.0.35"
+    "@taplo/cli": "npm:^0.7.0"
+    "@tybys/wasm-util": "npm:^0.10.0"
+    ava: "npm:^6.4.1"
+    chalk: "npm:^5.6.2"
+    husky: "npm:^9.1.7"
+    lint-staged: "npm:^16.1.6"
+    npm-run-all2: "npm:^8.0.4"
+    oxlint: "npm:^1.14.0"
+    prettier: "npm:^3.6.2"
+    tinybench: "npm:^6.0.0"
+    typescript: "npm:^5.9.2"
+  languageName: unknown
+  linkType: soft
 
 "ms@npm:^2.1.3":
   version: 2.1.3
